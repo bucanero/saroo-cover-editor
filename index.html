@@ -547,7 +547,7 @@ $('btnOpen').onclick=()=>$('fileOpen').click();
 $('fileOpen').onchange=e=>{ if(e.target.files[0]) loadCoverBin(e.target.files[0]); e.target.value=''; };
 
 // Sample cover.bin hosted on GitHub Releases (~30 MB).
-const SAMPLE_URL='https://github.com/bucanero/saroo-cover-editor/releases/download/2025-06-08/cover.bin';
+const SAMPLE_URL='https://bucanero.github.io/saroo-cover-editor/cover.bin';
 $('lnkSample').onclick=async(e)=>{
   e.preventDefault();
   if(covers.length && !confirm('Discard current covers and load the sample cover.bin?')) return;
